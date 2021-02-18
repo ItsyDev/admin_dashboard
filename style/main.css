@@ -10965,7 +10965,7 @@ footer p {
   width: 600px;
   height: 59px;
   margin-top: 15px;
-  margin-right: 50px;
+  margin-left: 325px;
 }
 
 .page-dashboard .search-heading .form-control {
@@ -11027,5 +11027,121 @@ footer p {
   .page-dashboard #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
   }
+}
+
+.page-dashboard .section-content {
+  margin-top: 150px;
+}
+
+.page-dashboard .section-content .dahsboard-heading {
+  margin-left: 150px;
+  color: #f5f5fb;
+}
+
+.page-dashboard .section-content .dahsboard-heading .card {
+  background-color: #4a4856;
+}
+
+.page-dashboard .section-content .dahsboard-heading .dashboard-card-titel {
+  font-weight: bold;
+  font-family: "Poppins";
+  font-size: 30px;
+  margin-bottom: 24px;
+}
+
+.page-dashboard .section-content .dahsboard-heading a {
+  color: #fd7551;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.page-dashboard .section-content .dahsboard-heading a:hover {
+  color: #191723;
+}
+
+.page-dashboard .section-content .dashboard-discover {
+  margin-top: 70px;
+  color: #f5f5fb;
+  font-size: 31px;
+  font-weight: bold;
+  width: 132px;
+  border-bottom: 6px solid #4a4856;
+  margin-left: 50px;
+}
+
+.page-dashboard .section-content .dashboard-content {
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.page-dashboard .section-content .dashboard-content .fas {
+  font-size: 60px;
+  margin-left: 50px;
+}
+
+.page-dashboard .section-content .dashboard-content .card {
+  background-color: #00a2b7;
+}
+
+.page-dashboard .section-content .dashboard-content .dashboard-sum {
+  color: #fffbfb;
+}
+
+.page-dashboard .section-content .dashboard-content .dashboard-sum .dashboard-card-title-content {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.page-dashboard .section-content .dashboard-stock {
+  margin-top: 40px;
+  margin-left: 35px;
+}
+
+.page-dashboard .section-content .dashboard-stock table {
+  color: #fffbfb;
+}
+
+.page-dashboard .section-content .dashboard-stock .card {
+  background-color: #4a4856;
+}
+
+.page-dashboard .section-content .dashboard-stock .dashboard-stock-titel-unit {
+  color: #fffbfb;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.page-dashboard .section-content .dashboard-stock .dashboard-stock-pheripheral {
+  margin-top: 17px;
+  margin-left: 50px;
+  width: 300px;
+}
+
+.page-dashboard .section-content .dashboard-stock .dashboard-stock-pheripheral table {
+  width: 260px;
+}
+
+.page-dashboard .section-content .dashboard-stock .dashboard-stock-titel-pher {
+  color: #fffbfb;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.page-dashboard .section-content .dashboard-stock .dashboard-card-title-sub {
+  font-size: 25px;
+}
+
+.section-edp-auth img {
+  width: 588px;
+  height: 826px;
+}
+
+.section-edp-auth .content-login {
+  margin-top: 100px;
 }
 /*# sourceMappingURL=main.css.map */

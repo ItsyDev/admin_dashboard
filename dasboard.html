@@ -92,6 +92,17 @@
             class="navbar navbar-store navbar-expand-lg navbar-light fixed-top"
             data-aos="fade-down"
           >
+            <div class="search-heading">
+              <form class="form-group">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </form>
+            </div>
+
             <button
               class="btn btn-secondary d-md-none mr-auto mr-2"
               id="menu-toggle"
@@ -153,26 +164,16 @@
             data-aos="fade-up"
           >
             <div class="container-fluid">
-              <div class="search-heading">
-                <form class="form-group">
-                  <input
-                    class="form-control"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                </form>
-              </div>
-              <div class="dahsboard-heading">
+              <div class="dahsboard-heading text-center">
                 <div class="row">
-                  <div class="col">
+                  <div class="col-10">
                     <div class="card mb-4">
                       <div class="card-body">
                         <div class="dashboard-card-titel">Selamat Datang</div>
-                        <div class="dashboard card-subtitle">
+                        <div class="dashboard-card-subtitle">
                           Ini merupakan sebuah sistem untuk melihat stock
                           ketersedian barang yang ada di EDP. Anda telah login
-                          sebagai Zie
+                          sebagai <a href="">Fauzi Nurfariyanto</a>
                         </div>
                       </div>
                     </div>
@@ -180,15 +181,13 @@
                 </div>
               </div>
               <div class="dashboard-discover">
-                <h2 class="dashboard-discover">Discover</h2>
-                <hr class="solid" />
+                <h2>Discover</h2>
               </div>
               <div class="dashboard-content">
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-4 dashboard-sum">
                     <div class="card mb-2">
                       <div class="card-body">
-                        <div class="dashboard-icon-content"></div>
                         <div class="dashboard-card-title-content">
                           <span>50</span><i class="fas fa-desktop"></i>
                         </div>
@@ -198,7 +197,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-4 dashboard-sum">
                     <div class="card mb-2">
                       <div class="card-body">
                         <div class="dashboard-icon-content"></div>
@@ -206,21 +205,19 @@
                           <span>50</span><i class="fas fa-desktop"></i>
                         </div>
                         <div class="dashboard-card-title-sub">
-                          Jumlah Unit PC / Laptop
+                          Jumlah Pheripheral
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-4 dashboard-sum">
                     <div class="card mb-2">
                       <div class="card-body">
                         <div class="dashboard-icon-content"></div>
                         <div class="dashboard-card-title-content">
                           <span>50</span><i class="fas fa-desktop"></i>
                         </div>
-                        <div class="dashboard-card-title-sub">
-                          Jumlah Unit PC / Laptop
-                        </div>
+                        <div class="dashboard-card-title-sub">Jumlah Divis</div>
                       </div>
                     </div>
                   </div>
@@ -228,10 +225,10 @@
               </div>
               <div class="dashboard-stock">
                 <div class="row">
-                  <div class="col-7 mb-2">
+                  <div class="col-7">
                     <div class="card-body">
                       <div class="dashboard-card-table card">
-                        <div class="dashboard-stock-titel">
+                        <div class="dashboard-stock-titel-unit">
                           List Barang Unit PC / Laptop Ready
                         </div>
                         <table class="table">
@@ -248,19 +245,31 @@
                               <td>Laptop</td>
                               <td>Asus</td>
                               <td>ROG Mothership GZ700</td>
-                              <td>Tersedia</td>
+                              <td>
+                                <span class="label badge-success"
+                                  >Tersedia</span
+                                >
+                              </td>
                             </tr>
                             <tr>
                               <td>Laptop</td>
                               <td>Dell</td>
                               <td>Latitude 5420</td>
-                              <td>Tersedia</td>
+                              <td>
+                                <span class="label badge-success"
+                                  >Tersedia</span
+                                >
+                              </td>
                             </tr>
                             <tr>
                               <td>Laptop</td>
                               <td>Apple</td>
                               <td>Macbook Air M1</td>
-                              <td>Tersedia</td>
+                              <td>
+                                <span class="label badge-success"
+                                  >Tersedia</span
+                                >
+                              </td>
                             </tr>
                           </tbody>
                         </table>
@@ -268,11 +277,11 @@
                     </div>
                   </div>
                   <div class="dashboard-stock-pheripheral card">
-                    <div class="dashboard-stock-titel text-center">
+                    <div class="dashboard-stock-titel-pher text-center">
                       Stock Pheripheral
                     </div>
-                    <div class="col-2 mb-2">
-                      <div class="dashboard-pheripheral">
+                    <div class="col-5 mb-2">
+                      <div class="dashboard-pheripheral text-center">
                         <table class="table">
                           <thead>
                             <tr>
