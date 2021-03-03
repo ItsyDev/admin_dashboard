@@ -2,18 +2,12 @@
 
 .login_page {
   .sidebar {
+    @include flex-box(space-between, center, column);
     height: 100vh;
     background-color: $primary-gelap;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
     text-align: center;
     .title_sidebar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      @include flex-box(center, center, column);
       .logo {
         margin-top: 90px;
         width: 72px;
@@ -43,8 +37,6 @@
 
 // LOGIN PAGE CONTENT  RIGHT
 .page_login_input {
-  // width: 50%;
-
   // Content title
   .content_login {
     .title_content {

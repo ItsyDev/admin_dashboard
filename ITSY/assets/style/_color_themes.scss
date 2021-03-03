@@ -3,3 +3,12 @@ $primary-gelap: #8ab4f2;
 $primary-transparent: #e1f0ff;
 $dark-blue: #1e1e2d;
 $dark-solid: #1a1a27;
+
+// mixin
+
+@mixin flex-box($JC, $AI, $FD) {
+  display: flex;
+  justify-content: $JC;
+  align-items: $AI;
+  flex-direction: $FD;
+}
