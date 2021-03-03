@@ -4,3 +4,11 @@
   align-items: $AI;
   flex-direction: $FD;
 }
+
+@mixin typografiHeading($Colors) {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
+  color: $Colors;
+}
