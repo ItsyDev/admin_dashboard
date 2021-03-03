@@ -1,14 +1,13 @@
-@import "./mixin";
-@import "./color_themes";
-
+@use "./mixin";
+@use "./color_themes" as color;
 .login_page {
   .sidebar {
-    @include flex-box(space-between, center, column);
+    @include mixin.flex-box(space-between, center, column);
     height: 100vh;
-    background-color: $primary-gelap;
+    background-color: color.$primary-gelap;
     text-align: center;
     .title_sidebar {
-      @include flex-box(center, center, column);
+      @include mixin.flex-box(center, center, column);
       .logo {
         margin-top: 90px;
         width: 72px;
@@ -21,7 +20,7 @@
       }
     }
     .description {
-      @include typografiHeading(#426dad);
+      @include mixin.typografiHeading(#426dad);
       padding: 20px;
       margin-top: 70px;
     }
@@ -39,7 +38,7 @@
   .content_login {
     .title_content {
       h2 {
-        @include typografiHeading(black);
+        @include mixin.typografiHeading(black);
       }
       p {
         color: #8a8a8a;
@@ -70,14 +69,14 @@
       }
     }
     .btn-sign_in {
-      background-color: $primary-terang;
+      background-color: color.$primary-terang;
       color: white;
       height: 40px;
       font-weight: 600;
     }
     .btn-google {
-      background-color: $primary-transparent;
-      color: $primary-terang;
+      background-color: color.$primary-transparent;
+      color: color.$primary-terang;
       font-size: 14px;
       font-weight: 600;
       img {
