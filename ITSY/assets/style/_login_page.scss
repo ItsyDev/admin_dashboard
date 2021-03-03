@@ -1,7 +1,9 @@
+@import "./color_themes";
+
 .login_page {
   .sidebar {
     height: 100vh;
-    background-color: #8ab4f2;
+    background-color: $primary-gelap;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +43,7 @@
 
 // LOGIN PAGE CONTENT  RIGHT
 .page_login_input {
-  width: 50%;
+  // width: 50%;
 
   // Content title
   .content_login {
@@ -65,9 +67,11 @@
 
   form {
     input {
+      width: 50%;
       background-color: #f3f6f9;
     }
     label {
+      width: 50%;
       font-weight: 600;
 
       a {
@@ -76,15 +80,14 @@
       }
     }
     .btn-sign_in {
-      width: 94px;
-      background-color: #3699ff;
+      background-color: $primary-terang;
       color: white;
       height: 40px;
       font-weight: 600;
     }
     .btn-google {
-      background-color: #e1f0ff;
-      color: #3699ff;
+      background-color: $primary-transparent;
+      color: $primary-terang;
       font-size: 14px;
       font-weight: 600;
       img {
@@ -110,5 +113,28 @@ footer {
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar_media {
+    display: none;
+  }
+
+  form {
+    label,
+    input {
+      width: 100% !important;
+    }
+
+    .btn {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .btn-sign_in,
+  .btn-google {
+    width: 100%;
   }
 }

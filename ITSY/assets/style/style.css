@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 .login_page .sidebar {
   height: 100vh;
   background-color: #8ab4f2;
@@ -58,10 +58,6 @@
   width: 100%;
 }
 
-.page_login_input {
-  width: 50%;
-}
-
 .page_login_input .content_login .title_content h2 {
   font-size: 25px;
 }
@@ -80,10 +76,12 @@
 }
 
 .page_login_input form input {
+  width: 50%;
   background-color: #f3f6f9;
 }
 
 .page_login_input form label {
+  width: 50%;
   font-weight: 600;
 }
 
@@ -93,7 +91,6 @@
 }
 
 .page_login_input form .btn-sign_in {
-  width: 94px;
   background-color: #3699ff;
   color: white;
   height: 40px;
@@ -128,6 +125,26 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .sidebar_media {
+    display: none;
+  }
+  form label,
+  form input {
+    width: 100% !important;
+  }
+  form .btn {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn-sign_in,
+  .btn-google {
+    width: 100%;
+  }
 }
 
 .login_page {
