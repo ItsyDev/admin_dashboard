@@ -123,30 +123,71 @@ form input {
 }
 #Dash_board {
   display: flex;
-  justify-content: center;
   background: #e7e9f1;
   height: 100vh;
 }
 #Dash_board .sidebar {
-  width: 265px;
+  width: 300px;
 }
 #Dash_board .sidebar {
   color: #9ea1ae;
   background: #1e1e2d;
 }
 
-#Dash_board {
+.navbar_main .navbar .navbar-brand {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+.navbar_main .navbar .navbar-brand span {
+  font-size: 18px;
+  margin-right: 20px;
+  font-weight: 700;
+}
+.navbar_main .navbar .navbar-brand img {
+  height: 35px;
+  border-radius: 5px;
+}
+.navbar_main .navbar .nav-item .nav-link {
+  position: relative;
+}
+.navbar_main .navbar .nav-item .nav-link .count_ {
+  width: 18px;
+  height: 18px;
+  font-size: 9px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-weight: bold;
+  line-height: 17px;
+  border-radius: 50%;
+}
+.navbar_main .navbar .nav-item .nav-link .count_notification {
+  position: absolute;
+  top: 51%;
+  left: 63%;
+}
+.navbar_main .navbar .nav-item .nav-link .count_message {
+  position: absolute;
+  top: -3%;
+  left: 63%;
+}
+
+.navbar_main form {
+  position: relative;
+}
+.navbar_main form input {
+  width: 343px;
+  border-radius: 5px;
   background: #e7e9f1;
-  height: 100vh;
 }
-#Dash_board .sidebar {
-  width: 265px;
+.navbar_main form .search_input {
+  position: absolute;
+  left: 90%;
+  top: 28%;
 }
-#Dash_board .sidebar {
-  color: #9ea1ae;
-  background: #1e1e2d;
+.navbar_main form .search_input:hover {
+  cursor: pointer;
 }
 
 html,

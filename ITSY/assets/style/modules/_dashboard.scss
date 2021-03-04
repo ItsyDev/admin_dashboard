@@ -2,16 +2,80 @@ $font_paint: #9ea1ae;
 $sidebar-paint: #1e1e2d;
 #Dash_board {
   display: flex;
-  justify-content: center;
   background: #e7e9f1;
   height: 100vh;
 
   .sidebar {
-    width: 265px;
+    width: 300px;
   }
 
   .sidebar {
     color: $font_paint;
     background: $sidebar-paint;
+  }
+}
+
+// NAVBAR
+.navbar_main {
+  .navbar {
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      span {
+        font-size: 18px;
+        margin-right: 20px;
+        font-weight: 700;
+      }
+      img {
+        height: 35px;
+        border-radius: 5px;
+      }
+    }
+
+    .nav-item {
+      .nav-link {
+        position: relative;
+        .count_ {
+          width: 18px;
+          height: 18px;
+          font-size: 9px;
+          color: white;
+          background-color: black;
+          text-align: center;
+          font-weight: bold;
+          line-height: 17px;
+          border-radius: 50%;
+        }
+        .count_notification {
+          position: absolute;
+          top: 51%;
+          left: 63%;
+        }
+        .count_message {
+          position: absolute;
+          top: -3%;
+          left: 63%;
+        }
+      }
+    }
+  }
+}
+
+// form
+.navbar_main form {
+  position: relative;
+  input {
+    width: 343px;
+    border-radius: 5px;
+    background: #e7e9f1;
+  }
+  .search_input {
+    position: absolute;
+    left: 90%;
+    top: 28%;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
