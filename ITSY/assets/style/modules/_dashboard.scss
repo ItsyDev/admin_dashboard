@@ -1,0 +1,17 @@
+$font_paint: #9ea1ae;
+$sidebar-paint: #1e1e2d;
+#Dash_board {
+  display: flex;
+  justify-content: center;
+  background: #e7e9f1;
+  height: 100vh;
+
+  .sidebar {
+    width: 265px;
+  }
+
+  .sidebar {
+    color: $font_paint;
+    background: $sidebar-paint;
+  }
+}
