@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+.login_page {
+  width: 100%;
+  height: 100vh;
+}
 .login_page .sidebar {
   display: flex;
   justify-content: space-between;
@@ -117,9 +121,10 @@ form input {
     width: 100%;
   }
 }
-.login_page {
-  width: 100%;
-  height: 100vh;
+#Dash_Board {
+  background: #e7e9f1;
+  padding: 10px;
+  border: 10px solid blue;
 }
 
 html,

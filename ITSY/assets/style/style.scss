@@ -1,11 +1,8 @@
 // style component
 @use "./modules/login_page";
+@use "./modules/dashboard";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-.login_page {
-  width: 100%;
-  height: 100vh;
-}
 html,
 body {
   overflow-x: hidden;
