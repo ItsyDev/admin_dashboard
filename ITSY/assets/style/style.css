@@ -134,6 +134,10 @@ form input {
   background: #1e1e2d;
 }
 
+.navbar_main .navbar {
+  background-color: white;
+  color: black;
+}
 .navbar_main .navbar .navbar-brand {
   display: flex;
   align-items: center;
