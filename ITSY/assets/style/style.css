@@ -194,6 +194,80 @@ form input {
   cursor: pointer;
 }
 
+.sidebar {
+  background-color: #1e1e2d;
+}
+.sidebar .card-header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.sidebar .card-header h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.sidebar .card-header .icons_bar {
+  position: relative;
+}
+.sidebar .card-header .icons_bar:hover {
+  cursor: pointer;
+}
+.sidebar .card-header .icons_bar:hover .show_bar {
+  visibility: visible;
+}
+.sidebar .card-header .icons_bar .show_bar {
+  position: absolute;
+  top: 26%;
+  left: 84%;
+  visibility: hidden;
+}
+
+.Menu_bar {
+  font-size: 17px;
+  background: #1e1e2d;
+}
+.Menu_bar a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #dbd6d6;
+}
+.Menu_bar a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.Menu_bar .marketplace_bar h6 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6b6c7c;
+}
+.Menu_bar .marketplace_bar ul.marketplace_link {
+  padding: 0;
+  margin-top: 17px;
+  border-bottom: 2px solid #2b2b43;
+  margin-bottom: 21px;
+}
+.Menu_bar .marketplace_bar ul.marketplace_link li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.Menu_bar .marketplace_bar ul.marketplace_link li img {
+  width: 22px;
+  top: -10%;
+  margin-right: 17px;
+}
+.Menu_bar .marketplace_bar ul.marketplace_link li a {
+  color: #9ea1ae;
+}
+
+@media (max-width: 992px) {
+  #Dash_board .sidebar {
+    width: 0;
+    z-index: -1;
+    transition: all 0.56s ease-in-out;
+  }
+}
 html,
 body {
   overflow-x: hidden;

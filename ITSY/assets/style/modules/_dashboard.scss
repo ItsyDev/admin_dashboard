@@ -81,3 +81,87 @@ $sidebar-paint: #1e1e2d;
     }
   }
 }
+
+// =========================================SIDEBAR STYLE ==========================
+.sidebar {
+  background-color: rgba(30, 30, 45, 1);
+  .card-header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    h5 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .icons_bar {
+      position: relative;
+      &:hover {
+        cursor: pointer;
+        .show_bar {
+          visibility: visible;
+        }
+      }
+
+      .show_bar {
+        position: absolute;
+        top: 26%;
+        left: 84%;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.Menu_bar {
+  font-size: 17px;
+  background: #1e1e2d;
+  a {
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(219, 214, 214);
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  .marketplace_bar {
+    h6 {
+      font-size: 18px;
+      font-weight: 400;
+      color: rgb(107, 108, 124);
+    }
+
+    ul.marketplace_link {
+      padding: 0;
+      margin-top: 17px;
+      border-bottom: 2px solid #2b2b43;
+      margin-bottom: 21px;
+      li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 22px;
+          top: -10%;
+          margin-right: 17px;
+        }
+        a {
+          color: rgba(158, 161, 174, 1);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #Dash_board {
+    .sidebar {
+      width: 0;
+      z-index: -1;
+      transition: all 0.56s ease-in-out;
+    }
+  }
+}
