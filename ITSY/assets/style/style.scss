@@ -1,16 +1,18 @@
 // style component
-@use "./modules/login_page";
-@use "./modules/dashboard";
+// @use "./modules/login_page";
+// @use "./modules/dashboard";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+// @import "./modules/login_page";
+@import "./modules/dashboard";
+@import "./modules/navbar_main_sidebar";
+@import "./modules/navbar_main_content";
+
 html,
 body {
   overflow-x: hidden;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
   font-family: "Poppins", sans-serif;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-weight: 500;
 }
