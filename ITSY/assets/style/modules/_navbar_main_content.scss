@@ -1,10 +1,10 @@
+@import "./mixin";
 .navbar_main_content {
   .navbar {
     background-color: white;
     color: black;
     .navbar-brand {
-      display: flex;
-      align-items: center;
+      @include flex-box(none, center, none);
       font-weight: 500;
       span {
         font-size: 18px;
@@ -67,11 +67,7 @@
 // ============================================== BODY CONTENT DASHBOARD =======================================
 
 .Content_dashboard {
-  // margin: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-box(center, center, column);
   .carousel {
     width: 100%;
     img {
@@ -94,12 +90,6 @@
         font-weight: 500;
         margin-top: 10px;
       }
-    }
-
-    .box_card {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
     }
   }
 }
