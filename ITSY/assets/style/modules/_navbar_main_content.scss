@@ -67,12 +67,39 @@
 // ============================================== BODY CONTENT DASHBOARD =======================================
 
 .Content_dashboard {
-  margin: 30px;
-
+  // margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .carousel {
     width: 100%;
     img {
       border-radius: 10px;
+    }
+  }
+
+  .status_card {
+    width: 90%;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+
+    .card_title {
+      padding: 10px;
+      margin-bottom: 10px;
+      h3 {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 10px;
+      }
+    }
+
+    .box_card {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
     }
   }
 }
