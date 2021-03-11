@@ -5,7 +5,13 @@
   display: -ms-flexbox;
   display: flex;
   background: #e7e9f1;
-  height: 100vh;
+}
+
+h6 {
+  margin-left: 1rem;
+  color: #494b74;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .sidebar {
@@ -118,15 +124,43 @@
   font-weight: 400;
 }
 
-.marketplace {
+.marketplace,
+.account {
   margin-top: 44px;
 }
 
-.marketplace h6 {
-  margin-left: 1rem;
-  color: #494b74;
+.accordion {
+  white-space: nowrap;
+}
+
+.accordion h6 {
+  color: #3d3d71;
   font-size: 16px;
-  font-weight: 400;
+  margin: 44px 1rem 0;
+}
+
+.accordion .accordion-button {
+  background-color: inherit;
+  margin-top: 10px;
+  color: #9ea1ae;
+}
+
+.accordion .accordion-button::after {
+  background-color: white;
+  border-radius: 50%;
+}
+
+.accordion .accordion-body a {
+  list-style-type: disc;
+  color: #9ea1ae;
+  font-size: 15px;
+  margin-left: 60px;
+  text-decoration: none;
+}
+
+.accordion .accordion-body a:hover {
+  color: #3699ff;
+  text-decoration: underline;
 }
 
 .toggle {
@@ -159,6 +193,14 @@
 
 .navigation.show_sidebars {
   width: 80px;
+}
+
+.navigation.show_sidebars ul h6,
+.navigation.show_sidebars .accordion span.title span {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.56s ease-in-out;
+  transition: all 0.56s ease-in-out;
 }
 
 @media (max-width: 992px) {
