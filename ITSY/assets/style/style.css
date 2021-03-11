@@ -211,7 +211,7 @@ h6 {
 
 .containers .navigation {
   position: relative;
-  width: 300px;
+  width: 275px;
   overflow: hidden;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -476,8 +476,16 @@ h6 {
   cursor: pointer;
 }
 
-.carousel .carousel-inner {
-  border-radius: 1%;
+.Content_dashboard {
+  margin: 30px;
+}
+
+.Content_dashboard .carousel {
+  width: 100%;
+}
+
+.Content_dashboard .carousel img {
+  border-radius: 10px;
 }
 
 html,

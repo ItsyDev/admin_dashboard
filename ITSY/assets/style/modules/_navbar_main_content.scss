@@ -66,8 +66,13 @@
 
 // ============================================== BODY CONTENT DASHBOARD =======================================
 
-.carousel {
-  .carousel-inner {
-    border-radius: 1%;
+.Content_dashboard {
+  margin: 30px;
+
+  .carousel {
+    width: 100%;
+    img {
+      border-radius: 10px;
+    }
   }
 }
