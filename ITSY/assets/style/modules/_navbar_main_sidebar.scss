@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
 .sidebar {
   display: flex;
   position: relative;
@@ -161,11 +159,6 @@
 
 .navigation.show_sidebars {
   width: 80px;
-  ul h6,
-  .accordion span.title span {
-    transform: scale(0);
-    transition: all 0.56s ease-in-out;
-  }
 }
 
 @media (max-width: 992px) {
@@ -176,6 +169,11 @@
   }
   .show_sidebars {
     width: 300px !important;
+    ul h6,
+    .accordion span.title span {
+      transform: scale(0);
+      transition: all 0.56s ease-in-out;
+    }
   }
 }
 
