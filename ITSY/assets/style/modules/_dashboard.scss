@@ -14,11 +14,39 @@ h6 {
   font-weight: 400;
 }
 
-// =============================Responsive Page ======================== @media (max-width: 992px) {
+// =============================Responsive Page ========================
 @media (max-width: 992px) {
+  // ============================================= Navigation user  =============================
+  .navbar {
+    .container-fluid {
+      padding: 0;
+      margin: 0;
+      flex-direction: column-reverse;
+      justify-content: start;
+      align-items: end;
+      flex-wrap: nowrap;
+
+      form {
+        width: 100%;
+        input {
+          width: 100%;
+        }
+        img.search_input {
+          left: 90%;
+        }
+      }
+
+      .menu_bar_profile {
+        ul.navbar-nav {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+
+  // ============================================= Navigation sidebar =============================
   .navigation {
     transition: all 0.56s ease-in-out;
-
     width: 80px !important;
   }
   .show_sidebars {
@@ -32,31 +60,6 @@ h6 {
 }
 
 @media (max-width: 552px) {
-  .navbar {
-    .container-fluid {
-      flex-direction: column-reverse;
-      justify-content: start;
-      align-items: flex-end;
-      flex-wrap: nowrap;
-
-      form {
-        width: 100%;
-        input {
-          width: 100%;
-        }
-        img.search_input {
-          left: 80%;
-        }
-      }
-
-      .menu_bar_profile {
-        ul.navbar-nav {
-          flex-direction: row;
-        }
-      }
-    }
-  }
-
   .status {
     &-saldo,
     &-total_order {

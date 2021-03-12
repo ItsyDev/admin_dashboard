@@ -308,7 +308,7 @@ footer a:hover {
 
 .toggle {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 93%;
   width: 40px;
   height: 40px;
@@ -316,6 +316,7 @@ footer a:hover {
   border: 5px solid #3d3d71;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 9999;
 }
 
 .toggle::before {
@@ -497,6 +498,37 @@ h6 {
 }
 
 @media (max-width: 992px) {
+  .navbar .container-fluid {
+    padding: 0;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .navbar .container-fluid form {
+    width: 100%;
+  }
+  .navbar .container-fluid form input {
+    width: 100%;
+  }
+  .navbar .container-fluid form img.search_input {
+    left: 90%;
+  }
+  .navbar .container-fluid .menu_bar_profile ul.navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   .navigation {
     -webkit-transition: all 0.56s ease-in-out;
     transition: all 0.56s ease-in-out;
@@ -515,35 +547,6 @@ h6 {
 }
 
 @media (max-width: 552px) {
-  .navbar .container-fluid {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .navbar .container-fluid form {
-    width: 100%;
-  }
-  .navbar .container-fluid form input {
-    width: 100%;
-  }
-  .navbar .container-fluid form img.search_input {
-    left: 80%;
-  }
-  .navbar .container-fluid .menu_bar_profile ul.navbar-nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
   .status-saldo, .status-total_order {
     border-bottom: 1px solid lightblue;
     margin-bottom: 10px;
