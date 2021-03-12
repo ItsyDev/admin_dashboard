@@ -91,5 +91,25 @@
         margin-top: 10px;
       }
     }
+
+    .box_card {
+      .card-header {
+        background: #fff;
+        border: none;
+        margin-bottom: 30px;
+      }
+
+      p {
+        @include typografi_paragraf(14px, #3699ff);
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+      }
+
+      small {
+        @include typografi_paragraf(10px, #909090);
+        font-weight: 500;
+      }
+    }
   }
 }

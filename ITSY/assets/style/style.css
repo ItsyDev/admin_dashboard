@@ -157,20 +157,6 @@ footer a:hover {
   }
 }
 
-#Dash_board {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #e7e9f1;
-}
-
-h6 {
-  margin-left: 1rem;
-  color: #494b74;
-  font-size: 16px;
-  font-weight: 400;
-}
-
 .sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,56 +338,6 @@ h6 {
   width: 80px;
 }
 
-@media (max-width: 992px) {
-  .navigation {
-    -webkit-transition: all 0.56s ease-in-out;
-    transition: all 0.56s ease-in-out;
-    width: 80px !important;
-  }
-  .show_sidebars {
-    width: 300px !important;
-  }
-  .show_sidebars ul h6,
-  .show_sidebars .accordion span.title span {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    -webkit-transition: all 0.56s ease-in-out;
-    transition: all 0.56s ease-in-out;
-  }
-}
-
-@media (max-width: 552px) {
-  .navbar .container-fluid {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .navbar .container-fluid form {
-    width: 100%;
-  }
-  .navbar .container-fluid form input {
-    width: 100%;
-  }
-  .navbar .container-fluid form img.search_input {
-    left: 80%;
-  }
-  .navbar .container-fluid .menu_bar_profile ul.navbar-nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
 .navbar_main_content .navbar {
   background-color: white;
   color: black;
@@ -524,6 +460,94 @@ h6 {
   text-align: center;
   font-weight: 500;
   margin-top: 10px;
+}
+
+.Content_dashboard .status_card .box_card .card-header {
+  background: #fff;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.Content_dashboard .status_card .box_card p {
+  font-size: 14px;
+  color: #3699ff;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.Content_dashboard .status_card .box_card small {
+  font-size: 10px;
+  color: #909090;
+  font-weight: 500;
+}
+
+#Dash_board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #e7e9f1;
+}
+
+h6 {
+  margin-left: 1rem;
+  color: #494b74;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 992px) {
+  .navigation {
+    -webkit-transition: all 0.56s ease-in-out;
+    transition: all 0.56s ease-in-out;
+    width: 80px !important;
+  }
+  .show_sidebars {
+    width: 300px !important;
+  }
+  .show_sidebars ul h6,
+  .show_sidebars .accordion span.title span {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: all 0.56s ease-in-out;
+    transition: all 0.56s ease-in-out;
+  }
+}
+
+@media (max-width: 552px) {
+  .navbar .container-fluid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .navbar .container-fluid form {
+    width: 100%;
+  }
+  .navbar .container-fluid form input {
+    width: 100%;
+  }
+  .navbar .container-fluid form img.search_input {
+    left: 80%;
+  }
+  .navbar .container-fluid .menu_bar_profile ul.navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .status-saldo, .status-total_order {
+    border-bottom: 1px solid lightblue;
+    margin-bottom: 10px;
+  }
 }
 
 html,

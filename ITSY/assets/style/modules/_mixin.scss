@@ -12,3 +12,8 @@
   line-height: 38px;
   color: $Colors;
 }
+
+@mixin typografi_paragraf($size_font, $color_font) {
+  font-size: $size_font;
+  color: $color_font;
+}
