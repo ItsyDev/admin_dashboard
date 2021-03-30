@@ -4,9 +4,12 @@
 <head>
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Font awesome icons -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- global style css  -->
      <link rel="stylesheet" href="./assets/style/style.css">
+
      <title>itsy dashboard</title>
 </head>
 
@@ -241,7 +244,24 @@
 
                <!-- ======================================== content dashboard  ========================================= -->
                <main class="Content_dashboard    m-xl-3 m-lg-3 m-md-3 ms-sm-2  ">
+
                          <div class="chart_ w-100">
+                              <!-- Edit form select opiton  -->
+                              <div class="card-header h4 text-muted bg-white d-flex justify-content-between align-items-center">
+                                   Dashboard
+
+                                  <form>
+                                        <select class="form-control bg-white">
+                                             <option>Bulan ini</option>
+                                             <option>Minggu ini </option>
+                                             <option>3 Bulan</option>
+                                             <option>6 Bulan</option>
+                                             <option>Tahun Ini</option>
+                                             <option>Custom</option>
+                                        </select>
+                                  </form>
+                              </div>
+                              <!-- body dashboard -->
                               <div class="row align-items-start">
                                    <div class="col-lg-6  mt-3">
                                        <div class="row w-100 container-fluid">
@@ -331,13 +351,13 @@
                                                             <div class="card-header p-2 fw-bold bg-white">
                                                                  Top  Produk
                                                             </div>
-                                                            <span class="ml-2">No Data</span>
+                                                            <span class="ml-2 text-muted">No Data</span>
                                                   </div>
                                                        <div class="card w-100">
                                                             <div class="card-header p-2 fw-bold bg-white">
                                                                  Top Kategori Produk
                                                             </div>
-                                                            <span class="ml-2">No Data</span>
+                                                            <span class="ml-2 text-muted">No Data</span>
                                                   </div>
 
                                         </div>
@@ -351,13 +371,14 @@
           </div>
      </header>
 
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-          crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-          crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+     crossorigin="anonymous"></script>
+
+     <!-- bootstrap min js  -->
+     <script src="./assets/script/bootstrap.min.js"></script>
+     <!-- script js yg w buat sendiri -->
      <script src="./assets/script/script.js"></script>
 </body>
 
