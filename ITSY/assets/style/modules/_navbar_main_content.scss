@@ -68,48 +68,4 @@
 
 .Content_dashboard {
   @include flex-box(center, center, column);
-  .carousel {
-    width: 100%;
-    img {
-      border-radius: 10px;
-    }
-  }
-
-  .status_card {
-    width: 90%;
-    border-radius: 5px;
-    overflow: hidden;
-    padding: 10px;
-
-    .card_title {
-      padding: 10px;
-      margin-bottom: 10px;
-      h3 {
-        font-size: 20px;
-        text-align: center;
-        font-weight: 500;
-        margin-top: 10px;
-      }
-    }
-
-    .box_card {
-      .card-header {
-        background: #fff;
-        border: none;
-        margin-bottom: 30px;
-      }
-
-      p {
-        @include typografi_paragraf(14px, #3699ff);
-        font-weight: 500;
-        margin: 0;
-        padding: 0;
-      }
-
-      small {
-        @include typografi_paragraf(10px, #909090);
-        font-weight: 500;
-      }
-    }
-  }
 }
