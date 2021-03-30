@@ -9588,6 +9588,11 @@ button.bg-dark:focus {
     margin-left: auto !important;
   }
 }
+@media (max-width: 768px) {
+  .mr {
+    margin-right: 30px;
+  }
+}
 .stretched-link::after {
   position: absolute;
   top: 0;

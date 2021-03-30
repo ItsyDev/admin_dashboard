@@ -28,7 +28,7 @@
       @include border-top-radius($card-inner-border-radius);
     }
 
-    &:last-child  {
+    &:last-child {
       border-bottom-width: 0;
       @include border-bottom-radius($card-inner-border-radius);
     }
@@ -103,7 +103,6 @@
   }
 }
 
-
 //
 // Header navs
 //
@@ -148,7 +147,6 @@
   @include border-bottom-radius($card-inner-border-radius);
 }
 
-
 // Card deck
 
 .card-deck {
@@ -171,7 +169,6 @@
     }
   }
 }
-
 
 //
 // Card groups
@@ -235,7 +232,6 @@
   }
 }
 
-
 //
 // Columns
 //
@@ -257,7 +253,6 @@
     }
   }
 }
-
 
 //
 // Accordion
