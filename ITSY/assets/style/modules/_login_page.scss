@@ -7,7 +7,7 @@
   .sidebar {
     @include flex-box(space-between, center, column);
     height: 100vh;
-    background-color: $primary-gelap;
+    background-color: #8ab4f2;
     text-align: center;
     .title_sidebar {
       @include flex-box(center, center, column);

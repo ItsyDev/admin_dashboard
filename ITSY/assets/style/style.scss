@@ -1,6 +1,7 @@
 // style component
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import "./scss/bootstrap.scss";
+@import "./modules/register_page";
 @import "./modules/login_page";
 @import "./modules/dashboard";
 
@@ -8,6 +9,7 @@ html,
 body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
+  background-color: #e1f0ff;
 }
 
 h1 h2 h3 h4 h5 h6 {
