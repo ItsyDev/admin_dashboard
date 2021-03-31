@@ -19,3 +19,14 @@
     }
   }
 }
+
+@media (max-width: 605px) {
+  #itsy_register {
+    width: 100%;
+    margin: 0;
+    .register_box {
+      height: 100vh;
+      padding: 0 5%;
+    }
+  }
+}

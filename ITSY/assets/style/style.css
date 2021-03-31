@@ -9955,6 +9955,16 @@ h3 {
   font-size: 14px;
 }
 
+@media (max-width: 605px) {
+  #itsy_register {
+    width: 100%;
+    margin: 0;
+  }
+  #itsy_register .register_box {
+    height: 100vh;
+    padding: 0 5%;
+  }
+}
 .login_page {
   width: 100%;
   height: 100vh;
