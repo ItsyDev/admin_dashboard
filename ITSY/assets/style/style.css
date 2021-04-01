@@ -9954,6 +9954,14 @@ h3 {
   margin-bottom: 15px;
   font-size: 14px;
 }
+#itsy_register .register_box small.form_info {
+  display: none;
+  margin-top: -12px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  font-style: italic;
+  color: rgba(253, 4, 4, 0.897);
+}
 
 @media (max-width: 605px) {
   #itsy_register {

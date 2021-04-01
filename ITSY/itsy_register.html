@@ -20,26 +20,47 @@
                     <div class="row">
 
                          <div class="col">
-                              <input type="text" class="form-control" placeholder="Nama Depan">
+                              <input type="text" class="form-control" placeholder="Nama Depan" id="first_name">
+                              <small class="form_info err_firs_name ">Please Fill in Your FirsName!</small>
                          </div>
                          <div class="col">
-                              <input type="text" class="form-control" placeholder="Nama Belakang">
+                              <input type="text" class="form-control" placeholder="Nama Belakang" id="last_name">
+                              <small class="form_info err_last_name ">Please Fill in Your LastName!</small>
                          </div>
 
                          <div class="col-12">
-                              <input type="text" class="form-control" placeholder="Username">
-                              <input type="email" class="form-control" placeholder="Alamat Email">
-                              <input type="number" class="form-control" placeholder="No HP">
-                              <input type="password" class="form-control" placeholder="Password">
-                              <input type="password" class="form-control" placeholder="Konfirmasi Password">
+
+                              <div class="container_user_name">
+                                   <input type="text" class="form-control" placeholder="Username" name="name" id="user_name">
+                                   <small class="form_info err_username ">Please Fill in Your UserName!</small>
+                              </div>
+
+                              <div class="container_user_email">
+                                   <input type="email" class="form-control" placeholder="Alamat Email" id="user_email">
+                                   <small class="form_info  err_user_email">Please Fill in Your Email!</small>
+                              </div>
+
+                              <div>
+                                   <input type="number" class="form-control" placeholder="No HP" id="user_number_phone">
+                                   <small class="form_info err_number_phone ">Please Fill in Your Number Phone!</small>
+                              </div>
+
+                              <div>
+                                   <input type="password" class="form-control" placeholder="Password" id="user_password">
+                                   <input type="password" class="form-control" placeholder="Konfirmasi Password" id="user_konfirmasi_password">
+                                   <small class="form_info err_konfirmasi_password ">Please Fill in Your Password</small>
+                                   <small class="form_info err_konfirmasi_password_tidak_sama ">Please match your password correctly</small>
+                              </div>
                          </div>
 
                          <div class="col-12 mt-4 d-flex justify-content-center align-items-center flex-column">
-                            <p class="text-muted small text-center  w-auto">
-                                   Dengan melanjutkan, Anda mengetahui bahwa Anda telah membaca dan menyetujui ketentuan layanan Kami
+                            <p class="text-muted small w-auto ">
+                                   <span>
+                                        Dengan melanjutkan, Anda mengetahui bahwa Anda telah membaca dan menyetujui ketentuan layanan Kami
+                                   </span>
                             </p>
 
-                            <button class="btn btn-success mb-5 text-center w-100 ">NEXT</button>
+                            <button class="btn btn-success mb-5 text-center w-100  " id="btn_next_form">NEXT</button>
                          </div>
 
 
@@ -47,5 +68,6 @@
                </form>
           </div>
      </section>
+     <script src="./assets/script/FormValidasion.js"></script>
 </body>
 </html>
