@@ -16,43 +16,39 @@
                          <a href="./itsy_login.html">Masuk</a>
                     </small>
                </div>
-               <form>
-                    <div class="row">
 
+               <!-- FROM CONTROLL USER -->
+               <form name="Form-controll" >
+                    <div class="row Daftar_User ">
+                         <!-- INPUT TEXT FIRST NAME   -->
                          <div class="col">
-                              <input type="text" class="form-control" placeholder="Nama Depan" id="first_name">
-                              <small class="form_info err_firs_name ">Please Fill in Your FirsName!</small>
+                              <input name="first_name" type="text" class="form-control" placeholder="Nama Depan" id="first_name" required value="">
                          </div>
+                         <!-- INPUT TEXT LASTNAME   -->
                          <div class="col">
-                              <input type="text" class="form-control" placeholder="Nama Belakang" id="last_name">
-                              <small class="form_info err_last_name ">Please Fill in Your LastName!</small>
+                              <input name="last_name" type="text" class="form-control" placeholder="Nama Belakang" id="last_name" required value="">
                          </div>
 
                          <div class="col-12">
 
-                              <div class="container_user_name">
-                                   <input type="text" class="form-control" placeholder="Username" name="name" id="user_name">
-                                   <small class="form_info err_username ">Please Fill in Your UserName!</small>
-                              </div>
+                              <!-- INPUT TEXT USERNAME  -->
+                                   <input name="user_name" type="text" class="form-control" placeholder="Username"  id="user_name" required value="">
 
-                              <div class="container_user_email">
-                                   <input type="email" class="form-control" placeholder="Alamat Email" id="user_email">
-                                   <small class="form_info  err_user_email">Please Fill in Your Email!</small>
-                              </div>
 
-                              <div>
-                                   <input type="number" class="form-control" placeholder="No HP" id="user_number_phone">
-                                   <small class="form_info err_number_phone ">Please Fill in Your Number Phone!</small>
-                              </div>
+                              <!-- INPUT EMAIL  -->
+                                   <input name="user_email" type="email" class="form-control" placeholder="Alamat Email" id="user_email" required value="">
 
-                              <div>
-                                   <input type="password" class="form-control" placeholder="Password" id="user_password">
-                                   <input type="password" class="form-control" placeholder="Konfirmasi Password" id="user_konfirmasi_password">
-                                   <small class="form_info err_konfirmasi_password ">Please Fill in Your Password</small>
-                                   <small class="form_info err_konfirmasi_password_tidak_sama ">Please match your password correctly</small>
-                              </div>
+
+                              <!-- INPUT NUMBER PHONE -->
+                                   <input name="user_number_phone" type="number" class="form-control" placeholder="No HP" id="user_number_phone" required value="">
+
+
+                              <!-- INPUT PASSWORD1 AND PASSWORD2   -->
+                                   <input name="user_password1" type="password" class="form-control" placeholder="Password" id="user_password1" required value="">
+                                   <input name="user_password2" type="password" class="form-control" placeholder="Konfirmasi Password" id="user_password2" required  value="">
+                                   <small class="form_info err_konfirmasi_password ">Password Yang Kamu Masukan Tidak Cocok dengan sebelumnya.</small>
+
                          </div>
-
                          <div class="col-12 mt-4 d-flex justify-content-center align-items-center flex-column">
                             <p class="text-muted small w-auto ">
                                    <span>
@@ -60,14 +56,79 @@
                                    </span>
                             </p>
 
-                            <button class="btn btn-success mb-5 text-center w-100  " id="btn_next_form">NEXT</button>
+                            <button type="submit" class="btn btn-success mb-5 text-center w-100"   id="btn_next_form">NEXT</button>
                          </div>
 
 
                     </div>
                </form>
           </div>
+
+          <!-- User Toko Register  -->
+     <form>
+
+          <div class="row mt-5 store-card d-none" id="sectionStore">
+               <div class="col-12 mx-auto">
+                    <div class="card">
+                         <div class="card-body">
+                              <div class="register_heading mb-5 text-center mt-5">
+                                   <h1 class="">ITS'SO EASY</h1>
+                                   <p class="text-muted">Register your store!</p>
+
+                                   <small class="text-muted">Sudah punya akun ITSY?
+                                        <a href="./itsy_login.html">Masuk</a>
+                                   </small>
+
+                              </div>
+                              <div class="form-group">
+                                   <label>Store Name</label>
+                                   <input type="text" name="toko_name" class="form-control "
+                                        placeholder="Input your store name..." value="" required>
+                              </div>
+                              <div class="form-group">
+                                   <label>Store Category</label>
+                                   <select name="category_toko_id" class="form-control " value="" required>
+                                        <option value="1">Toko Fashion</option>
+                                        <option value="2">Toko Makanan</option>
+                                        <option value="3">Toko Barang</option>
+                                   </select>
+                              </div>
+                              <h6>Address</h6>
+                              <div class="form-row">
+                                   <div class="form-group col-md">
+                                        <label>Province</label>
+                                        <select name="province_id" class="form-control " value="" required>
+                                             <option value="1">Jawa Barat</option>
+                                             <option value="2">Jawa Tengah</option>
+                                             <option value="3">Jawa Timur</option>
+                                        </select>
+                                   </div>
+                                   <div class="form-group col-md">
+                                        <label>District</label>
+                                        <select name="district_id" class="form-control" value="" required>
+                                             <option value="1">Bekasi</option>
+                                             <option value="2">Semarang</option>
+                                             <option value="3">Surabaya</option>
+                                        </select>
+                                   </div>
+                              </div>
+                              <div class="form-group">
+                                   <label>Store Address</label>
+                                   <textarea name="toko_address" class="form-control " cols="30" rows="5"
+                                        placeholder="Input your store address..."></textarea>
+                              </div>
+                              <button class="btn btn-warning" id="btn_back_form_register">Back</button>
+                              <button class="btn btn-primary" type="submit" id="btn_next_form_register">Register</button>
+                              </form>
+                         </div>
+
+                    </div>
+               </div>
+          </div>
+          </form>
+
      </section>
+     <!-- FORM DAFTAR TOKO  -->
      <script src="./assets/script/FormValidasion.js"></script>
 </body>
 </html>

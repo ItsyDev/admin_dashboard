@@ -1,4 +1,5 @@
-#itsy_register {
+#itsy_register,
+#sectionStore {
   width: 600px;
   margin: 20px auto;
   .register_box {
@@ -28,6 +29,8 @@
     }
   }
 }
+
+// Register Page
 
 @media (max-width: 605px) {
   #itsy_register {
