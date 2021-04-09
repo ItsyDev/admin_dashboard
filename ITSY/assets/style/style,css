@@ -10329,24 +10329,6 @@ h6 {
   font-weight: 400;
 }
 
-section.harga_grosir .rentang_inp_pemisah {
-  position: absolute;
-  top: 47px;
-  left: 48%;
-  height: 30px;
-  line-height: 13px;
-}
-section.harga_grosir .rentang_inp_pemisah2 {
-  position: absolute;
-  top: 0;
-  left: 48%;
-  height: 30px;
-  line-height: 13px;
-}
-section.harga_grosir .inpt_rentang {
-  width: 50% !important;
-}
-
 @media (max-width: 992px) {
   .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl {
     padding: 0;
@@ -10383,9 +10365,12 @@ section.harga_grosir .inpt_rentang {
     transition: all 0.56s ease-in-out;
   }
 }
-.spesifikas_produk h6 {
-  margin-left: 0 !important;
-  border-bottom: 1px solid black;
+.dropzone {
+  background: white;
+  border-radius: 5px;
+  border: 2px dashed #0087f7;
+  border-image: none;
+  max-width: 100%;
 }
 
 @media (max-width: 552px) {
@@ -10410,4 +10395,4 @@ h1 h2 h3 h4 h5 h6 {
   font-weight: 500;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style,css.map */

@@ -67,5 +67,5 @@
 // ============================================== BODY CONTENT DASHBOARD =======================================
 
 .Content_dashboard {
-  @include flex-box(center, center, column);
+  @include flex-box(space-between, start, column);
 }
