@@ -10347,6 +10347,22 @@ section.harga_grosir .inpt_rentang {
   width: 50% !important;
 }
 
+.container_todo_value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container_todo_value .alert {
+  width: 50%;
+}
+.container_todo_value .alert .item_input {
+  width: 60%;
+}
+.container_todo_value .alert .btn-info {
+  display: inline-block;
+}
+
 @media (max-width: 992px) {
   .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl {
     padding: 0;

@@ -53,42 +53,105 @@ var myChart = new Chart(ctx, {
     }
 });
 
+
+// TODO LIST VARIAN
+const container = document.querySelector('.container_todo_value');
+var inputValue = document.querySelector('.filter_varian');
+const add = document.querySelector('.btn_filter_varian');
+
+if(window.localStorage.getItem("todos") == undefined){
+     var todos = [];
+     window.localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+var todosEX = window.localStorage.getItem("todos");
+var todos = JSON.parse(todosEX);
+
+
+class item{
+    constructor(name){
+        this.createItem(name);
+    }
+    createItem(name){
+        var itemBox = document.createElement('div');
+        itemBox.classList.add(`alert`);
+
+        var input = document.createElement('input');
+        input.type = "text";
+        input.disabled = true;
+        input.value = name;
+        input.classList.add('item_input');
+
+        var edit = document.createElement('button');
+        edit.classList.add(`btn-info`);
+        edit.innerHTML = "EDIT";
+        edit.addEventListener('click', () => this.edit(input, name));
+
+        var remove = document.createElement('button');
+        remove.classList.add(`btn-danger`);
+        remove.innerHTML = "REMOVE";
+        remove.addEventListener('click', () => this.remove(itemBox, name));
+
+        container.appendChild(itemBox);
+
+        itemBox.appendChild(input);
+        itemBox.appendChild(edit);
+        itemBox.appendChild(remove);
+
+    }
+
+    edit(input, name){
+        if(input.disabled == true){
+           input.disabled = !input.disabled;
+        }
+        else{
+            input.disabled = !input.disabled;
+            let indexof = todos.indexOf(name);
+            todos[indexof] = input.value;
+            window.localStorage.setItem("todos", JSON.stringify(todos));
+        }
+    }
+
+    remove(itemBox, name){
+        itemBox.parentNode.removeChild(itemBox);
+        let index = todos.indexOf(name);
+        todos.splice(index, 1);
+        window.localStorage.setItem("todos", JSON.stringify(todos));
+    }
+}
+
+add.addEventListener('click', check);
+window.addEventListener('keydown', (e) => {
+    if(e.which == 13){
+        check();
+    }
+})
+
+function check(){
+    if(inputValue.value != ""){
+        new item(inputValue.value);
+        todos.push(inputValue.value);
+        window.localStorage.setItem("todos", JSON.stringify(todos));
+        inputValue.value = "";
+    }
+    console.log("Hello World");
+}
+
+
+for (var v = 0 ; v < todos.length ; v++){
+    new item(todos[v]);
+}
+
+
+new item("Size");
+
+
+
+
 // textarea edit keterangan produk & symbol2
 var quill = new Quill('#editor', {
     theme: 'snow'
   });
-
-// produk setting
-const setting_produk = document.querySelectorAll('.setting_product .check_varian');
-setting_produk.forEach(item => {
-    item.addEventListener('click',function (e) {
-        if (e.target.name === "varian") {
-            document.querySelector(".Kategori_Varian").classList.toggle('d-none');
-            document.querySelector(".varian_product").classList.toggle("d-none")
-        }else if (e.target.name === "diskon") {
-                document.querySelector(".parent_diskon").classList.toggle("d-none")
-        }else if (e.target.name === "grosir") {
-                document.querySelector('.harga_grosir_check_true').classList.toggle("d-none")
-        }
-    })
-})
-
-
-// pemilihan varian size and warna
-const Kategori_Varian = document.querySelectorAll(".Kategori_Varian");
-Kategori_Varian.forEach(itemsVarian => {
-    itemsVarian.addEventListener("click", function (e) {
-        if (e.target.name === "kategori_size") {
-            document.querySelector(".varian_product_true_size ").classList.toggle('d-none');
-        }
-        if (e.target.name === "kategori_warna") {
-            document.querySelector(".product_true_color ").classList.toggle('d-none');
-        }
-
-    })
-});
-
-
 
 // +varian
 const btn_add_varian = document.querySelector('.tambah_varian');

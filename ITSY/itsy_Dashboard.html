@@ -419,9 +419,11 @@
                                    </ol>
                                    <hr>
 
+                                   <!-- =============================================== UI ADD PRODUCT  ===================== -->
                                    <div class="row w-100">
-                                        <div class="col-lg-9">
-                                             <form class="form_add_product bg-light w-100 p-2">
+                                        <div class="col-12">
+                                             <form
+                                                  class="form_add_product bg-light w-100 p-2 d-flex flex-column justify-content-center">
                                                   <div class="row">
                                                        <!--Nama Product   -->
                                                        <div class="col-12 mb-2">
@@ -496,52 +498,44 @@
                                                                       </div>
                                                                  </div>
 
-                                                                 <div class="parent_diskon d-none col">
-                                                                      <label class="font-weight-bold">Diskon</label>
-                                                                      <div class="input-group mb-3">
-                                                                           <input type="text" class="form-control"
-                                                                                aria-label="Recipient's username"
-                                                                                aria-describedby="button-addon2">
-                                                                           <div class="input-group-append">
-                                                                                <button
-                                                                                     class="btn btn-outline-secondary"
-                                                                                     type="button" id="button-addon2"
-                                                                                     disabled>%</button>
-                                                                           </div>
-                                                                      </div>
-                                                                 </div>
+
                                                             </div>
 
 
 
                                                        </div>
+
                                                        <!-- SPESIFIKASI PRODUCT  -->
                                                        <div class="col-12 spesifikas_produk ">
-                                                            <hr>
+
                                                             <!--checkbok Kategori Variann product -->
-                                                            <section id="KategoriVariann_product_1 ">
-                                                                 <div class="Kategori_Varian d-none  p-2">
-                                                                      <h5>Kategori Varian</h5>
-                                                                      <span class="kategori_size">
-                                                                           <input name="kategori_size" type="checkbox"
-                                                                                style="width: 50px;">
-                                                                           <small>
-                                                                                Size
-                                                                           </small>
-                                                                      </span>
-                                                                      <span class="kategori_warna">
-                                                                           <input name="kategori_warna" type="checkbox"
-                                                                                style="width: 50px;">
-                                                                           <small>
-                                                                                Warna
-                                                                           </small>
-                                                                      </span>
 
+                                                            <!-- ======================= Filter input varian product  -->
+                                                            <section class="container_filter_varian">
+                                                                 <label>Kategori Varian</label>
+                                                                 <div class="input-group ">
+                                                                      <input type="text" name="filter_varian"
+                                                                           class="form-control mb-3 filter_varian"
+                                                                           placeholder="Sesuaikan Varian Anda"
+                                                                           aria-label="Sesuaikan Varian Anda"
+                                                                           aria-describedby="button-addon2">
+                                                                      <div class="input-group-append d-block">
+                                                                           <button
+                                                                                class="btn btn-outline-primary btn_filter_varian"
+                                                                                type="button" id="filter_varian">Simpan
+                                                                                Varian</button>
+                                                                      </div>
                                                                  </div>
 
-                                                                 <hr>
+
+                                                                 <!-- ===================== TODO LIST VALUE  ============== -->
+                                                                 <div class="container_todo_value ">
+                                                                 </div>
+
+
+                                                                 <!-- ======================= detail input add product  -->
                                                                  <div class="p-2 row">
-                                                                      <div class="col-lg-2">
+                                                                      <div class="col-auto">
                                                                            <!-- Foto Product  -->
                                                                            <div class="foto_produk font-weight-bold">
                                                                                 <h6 class="font-weight-bold">Foto Produk
@@ -550,7 +544,7 @@
                                                                            </div>
                                                                       </div>
 
-                                                                      <div class="col-lg-2">
+                                                                      <div class="col-auto">
                                                                            <!-- Spesifikasi produk -->
                                                                            <div
                                                                                 class="spesifikasi_produk font-weight-bold">
@@ -602,37 +596,10 @@
                                                                            </div>
                                                                       </div>
 
+
+
+
                                                                       <div class="col-auto">
-                                                                           <div
-                                                                                class="varian_product d-none  font-weight-bold">
-                                                                                <h6 class="font-weight-bold">Varian</h6>
-                                                                                <div
-                                                                                     class="varian_product_true_size d-none">
-                                                                                     <small
-                                                                                          class="text-muted ml-2">Size</small>
-                                                                                     <input
-                                                                                          class="form-control  w-100 ml-2"
-                                                                                          name="varian_product_true_size"
-                                                                                          type="text"
-                                                                                          placeholder="Size">
-                                                                                </div>
-                                                                                <div
-                                                                                     class="product_true_color d-none mt-2">
-                                                                                     <small
-                                                                                          class="text-muted ml-2">Color</small>
-                                                                                     <input
-                                                                                          class="form-control w-100 ml-2"
-                                                                                          name="varian_product_true_color"
-                                                                                          type="text"
-                                                                                          placeholder="Color">
-                                                                                </div>
-
-                                                                           </div>
-
-                                                                      </div>
-
-
-                                                                      <div class="col-lg-3">
                                                                            <!--stok_produk -->
                                                                            <div class="stok_produk">
                                                                                 <h6 class="font-weight-bold">Stok</h6>
@@ -643,338 +610,28 @@
                                                                       </div>
                                                                  </div>
                                                             </section>
-                                                            <section class="d-none KategoriVariann_product_2 ">
-                                                                 <div class="Kategori_Varian d-none  p-2">
-                                                                      <h5>Kategori Varian</h5>
-                                                                      <span class="kategori_size">
-                                                                           <input name="kategori_size" type="checkbox"
-                                                                                style="width: 50px;">
-                                                                           <small>
-                                                                                Size
-                                                                           </small>
-                                                                      </span>
-                                                                      <span class="kategori_warna">
-                                                                           <input name="kategori_warna" type="checkbox"
-                                                                                style="width: 50px;">
-                                                                           <small>
-                                                                                Warna
-                                                                           </small>
-                                                                      </span>
 
-                                                                 </div>
-
-                                                                 <hr>
-                                                                 <div class="p-2 row">
-                                                                      <div class="col-lg-2">
-                                                                           <!-- Foto Product  -->
-                                                                           <div class="foto_produk font-weight-bold">
-                                                                                <h6 class="font-weight-bold">Foto Produk
-                                                                                </h6>
-                                                                                <input type="file" class="w-100 ">
-                                                                           </div>
-                                                                      </div>
-
-                                                                      <div class="col-lg-2">
-                                                                           <!-- Spesifikasi produk -->
-                                                                           <div
-                                                                                class="spesifikasi_produk font-weight-bold">
-                                                                                <h6 class="font-weight-bold">Spesifikasi
-                                                                                </h6>
-                                                                                <small
-                                                                                     class="text-muted ml-2">SKU</small>
-                                                                                <input class="form-control w-100 ml-2"
-                                                                                     name="spesifikasi" type="text">
-                                                                           </div>
-                                                                      </div>
-
-                                                                      <div class="col-auto">
-                                                                           <!--Harga Produk -->
-                                                                           <div class="harga_produk font-weight-bold ">
-                                                                                <h6 class="font-weight-bold">Harga</h6>
-                                                                                <div class="harga_beli ">
-
-                                                                                     <small
-                                                                                          class="text-muted ml-2">Harga
-                                                                                          Beli</small>
-                                                                                     <input class="form-control  ml-2"
-                                                                                          name="harga" id="harga "
-                                                                                          type="number">
-                                                                                </div>
-
-                                                                                <!-- harga_jual_normal -->
-                                                                                <div class="harga_jual_normal">
-                                                                                     <small
-                                                                                          class="text-muted ml-2 ">Harga
-                                                                                          Jual
-                                                                                          Normal</small>
-                                                                                     <input class="form-control  ml-2"
-                                                                                          name="harga_jual_normal"
-                                                                                          id="harga_jual_normal "
-                                                                                          type="number">
-                                                                                </div>
-
-                                                                                <!-- harga_jual_reseler -->
-                                                                                <div class="harga_jual_reseler">
-                                                                                     <small class="text-muted ml-2">
-                                                                                          Harga Jual
-                                                                                          Reseller</small>
-                                                                                     <input class="form-control  ml-2"
-                                                                                          name="harga_jual_reseler"
-                                                                                          id="harga_jual_reseler "
-                                                                                          type="number">
-                                                                                </div>
-                                                                           </div>
-                                                                      </div>
-
-                                                                      <div class="col-auto">
-                                                                           <div
-                                                                                class="varian_product d-none  font-weight-bold">
-                                                                                <h6 class="font-weight-bold">Varian</h6>
-                                                                                <div
-                                                                                     class="varian_product_true_size d-none">
-                                                                                     <small
-                                                                                          class="text-muted ml-2">Size</small>
-                                                                                     <input
-                                                                                          class="form-control  w-100 ml-2"
-                                                                                          name="varian_product_true_size"
-                                                                                          type="text"
-                                                                                          placeholder="Size">
-                                                                                </div>
-                                                                                <div
-                                                                                     class="product_true_color d-none mt-2">
-                                                                                     <small
-                                                                                          class="text-muted ml-2">Color</small>
-                                                                                     <input
-                                                                                          class="form-control w-100 ml-2"
-                                                                                          name="varian_product_true_color"
-                                                                                          type="text"
-                                                                                          placeholder="Color">
-                                                                                </div>
-
-                                                                           </div>
-
-                                                                      </div>
-
-
-                                                                      <div class="col-lg-3">
-                                                                           <!--stok_produk -->
-                                                                           <div class="stok_produk">
-                                                                                <h6 class="font-weight-bold">Stok</h6>
-                                                                                <input type="number" value="0"
-                                                                                     class="form-control w-100">
-                                                                           </div>
-
-                                                                      </div>
-                                                                 </div>
-                                                            </section>
 
                                                        </div>
                                                        <!-- + varian ui  -->
                                                        <div
                                                             class="col-12 d-flex justify-content-center align-items-center mt-5">
                                                             <span type="button"
-                                                                 class=" btn-sm btn btn-primary tambah_varian">+
+                                                                 class=" btn-sm btn btn-outline-primary tambah_varian">+
                                                                  varian</span>
                                                        </div>
-                                                       <div
-                                                            class="row align-items-center harga_grosir_check_true d-none ">
-                                                            <div class="col-4">
-                                                                 <!-- Rentang Harga Grosir produk -->
-                                                                 <div class=" mt-5  p-2  overflow-hidden ">
-                                                                      <section class="harga_grosir  position-relative">
-                                                                           <p class="font-weight-bold">Harga Grosir</p>
-                                                                           <div class="rentang d-flex overflow-hidden">
-                                                                                <div class="inpt_rentang mr-2">
-                                                                                     <label>
-                                                                                          Rentang
-                                                                                     </label>
-                                                                                     <br>
-                                                                                     <input type="text"
-                                                                                          class="rentang_inp">
-                                                                                </div>
-                                                                                <span
-                                                                                     class=" p-2 bg-secondary rentang_inp_pemisah  text-white mt-4 ">
-                                                                                     —</span>
 
-                                                                                <div class="inpt_rentang mt-2">
-
-                                                                                     <br>
-                                                                                     <input type="text"
-                                                                                          class="rentang_inp">
-                                                                                </div>
-
-                                                                           </div>
-                                                                      </section>
-
-                                                                      <section
-                                                                           class="harga_grosir  mt-2 position-relative">
-
-                                                                           <div class="rentang d-flex overflow-hidden">
-                                                                                <div class="inpt_rentang mr-2">
-
-                                                                                     <input type="text"
-                                                                                          class="rentang_inp">
-                                                                                </div>
-                                                                                <span
-                                                                                     class=" p-2 bg-secondary rentang_inp_pemisah2  text-white  ">
-                                                                                     —</span>
-
-                                                                                <div class="inpt_rentang">
-
-                                                                                     <input type="text"
-                                                                                          class="rentang_inp">
-                                                                                </div>
-
-                                                                           </div>
-                                                                      </section>
-
-                                                                      <section
-                                                                           class="harga_grosir  mt-2 position-relative">
-
-                                                                           <div class="rentang d-flex overflow-hidden">
-                                                                                <div class="inpt_rentang mr-2">
-
-                                                                                     <input type="text"
-                                                                                          class="rentang_inp">
-                                                                                </div>
-                                                                                <span
-                                                                                     class=" p-2 bg-secondary rentang_inp_pemisah2  text-white  ">
-                                                                                     —</span>
-
-                                                                                <div class="inpt_rentang">
-
-                                                                                     <input type="text"
-                                                                                          class="rentang_inp">
-                                                                                </div>
-
-                                                                           </div>
-                                                                      </section>
-
-                                                                      <section
-                                                                           class="harga_grosir  mt-2 position-relative">
-
-                                                                           <div class="rentang d-flex overflow-hidden">
-                                                                                <div class="inpt_rentang mr-2">
-
-                                                                                     <input type="text"
-                                                                                          class="rentang_inp">
-                                                                                </div>
-                                                                                <span
-                                                                                     class=" p-2 bg-secondary rentang_inp_pemisah2  text-white  ">
-                                                                                     —</span>
-
-                                                                                <div class="inpt_rentang">
-
-                                                                                     <input type="text"
-                                                                                          class="rentang_inp">
-                                                                                </div>
-
-                                                                           </div>
-                                                                      </section>
-
-                                                                      <section
-                                                                           class="harga_grosir  mt-2 position-relative">
-
-                                                                           <div class="rentang d-flex overflow-hidden">
-                                                                                <div class="inpt_rentang mr-2">
-
-                                                                                     <input type="text"
-                                                                                          class="rentang_inp">
-                                                                                </div>
-                                                                                <span
-                                                                                     class=" p-2 bg-secondary rentang_inp_pemisah2  text-white  ">
-                                                                                     —</span>
-
-                                                                                <div class="inpt_rentang">
-
-                                                                                     <input type="text"
-                                                                                          class="rentang_inp">
-                                                                                </div>
-
-                                                                           </div>
-                                                                      </section>
-
-                                                                 </div>
-
-                                                            </div>
-                                                            <div class="col-4">
-                                                                 <!-- harga satuan grosir  -->
-                                                                 <div style="margin-top: 95px;">
-                                                                      <label class="hargasatuan_title ">Harga
-                                                                           Satuan</label>
-                                                                      <br>
-
-                                                                      <input class="satuan_grosir mb-3" type="number">
-                                                                      <input class="satuan_grosir mb-3" type="number">
-                                                                      <input class="satuan_grosir mb-3" type="number">
-                                                                      <input class="satuan_grosir mb-3" type="number">
-                                                                 </div>
-                                                            </div>
-                                                            <div class="col-4">
-                                                                 <!-- Deskripsi Satuan dan grosir  -->
-                                                                 <div class="mt-2">
-                                                                      <p>
-                                                                           Keterangan:
-                                                                           Rentang jumlah item dimulai dari 2 (jika
-                                                                           kurang tidak
-                                                                           bisa digunakan)
-
-                                                                           Contoh:
-                                                                           Rentang: 2 - 10, Harga: 10000
-                                                                           Rentang: 11 - 20, Harga: 9500</p>
-
-                                                                 </div>
-                                                            </div>
-                                                       </div>
 
 
                                                   </div>
                                                   <!-- END ROW PRODUCT  -->
+                                                  <button class="btn   shadow btn-success mt-5">Simpan
+                                                       Produk</button>
                                              </form>
                                         </div>
                                         <!-- END COL ADD_PRODUCT  -->
 
-                                        <!-- filter varian add_product  -->
-                                        <div class="col-lg-3 ">
-                                             <div class="card p-2 bg-light">
-                                                  <small class="text-muted text-center font-weight-bold mt-2">
-                                                       PRODUCT SETTING</small>
-                                                  <hr>
-                                                  <div class="setting_product">
-                                                       <!-- chech_varian  -->
-                                                       <div class="form-group d-flex justify-content-between container">
-                                                            <label>Varian</label>
-                                                            <div class="check_varian varian_">
-                                                                 <input type="checkbox" name="varian">
-                                                            </div>
-                                                       </div>
-                                                       <!-- check Diskon  -->
-                                                       <div class="form-group d-flex justify-content-between container">
-                                                            <label>Diskon</label>
-                                                            <div class="check_varian">
-                                                                 <input type="checkbox" name="diskon">
-                                                            </div>
-                                                       </div>
-                                                       <!-- Check Harga Grosir -->
-                                                       <div class="form-group d-flex justify-content-between container">
-                                                            <label>Harga Grosir</label>
-                                                            <div class="check_varian">
-                                                                 <input type="checkbox" name="grosir">
-                                                            </div>
-                                                       </div>
 
-                                                       <!-- Check setting Gudang -->
-                                                       <div class="form-group d-flex justify-content-between container">
-                                                            <label>Setting Gudang</label>
-                                                            <div class="check_varian">
-                                                                 <input type="checkbox" name="setting_gudang">
-                                                            </div>
-                                                       </div>
-                                                  </div>
-
-                                             </div>
-                                             <button class="btn btn-primary mt-2 w-100">Simpan Produk</button>
-                                        </div>
                                         <!-- END COL filter varian add_product  -->
                                    </div>
                               </nav>

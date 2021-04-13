@@ -33,6 +33,23 @@ section.harga_grosir {
   }
 }
 
+// ============================= TODOLIST  VARIAN  ========================
+.container_todo_value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .alert {
+    width: 50%;
+    .item_input {
+      width: 60%;
+    }
+    .btn-info {
+      display: inline-block;
+    }
+  }
+}
 // =============================Responsive Page ========================
 @media (max-width: 992px) {
   // ============================================= Navigation user  =============================
