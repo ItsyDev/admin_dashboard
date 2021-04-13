@@ -55,106 +55,92 @@ var myChart = new Chart(ctx, {
 
 
 // TODO LIST VARIAN
-const container = document.querySelector('.container_todo_value');
-var inputValue = document.querySelector('.filter_varian');
-const add = document.querySelector('.btn_filter_varian');
+const container_todo = document.querySelector('.container_todo_value');
+const inputValue = document.querySelector('.filter_varian');
+const btn_filter_todo = document.querySelector('.btn_filter_varian');
 
-if(window.localStorage.getItem("todos") == undefined){
-     var todos = [];
-     window.localStorage.setItem("todos", JSON.stringify(todos));
-}
+//mengambil element
+const add_ui_varian = document.getElementById("add_ui_varian");
 
-var todosEX = window.localStorage.getItem("todos");
-var todos = JSON.parse(todosEX);
+// Event click listener pada button input varian
+btn_filter_todo.addEventListener("click", function (e) {
+    // parent alert todos
+    const el = document.createElement("div");
+
+    // stong tag todos
+    const strElement = document.createElement("strong");
+    strElement.textContent = inputValue.value;
+
+    // span text close icons
+    const span_times_close = document.createElement("span")
+    span_times_close.setAttribute("aria-hidden", true)
+    span_times_close.textContent = "x";
+
+    // btn close
+    const btn_close = document.createElement('button');
+    btn_close.type = "button";
+    btn_close.classList.add("close");
+    btn_close.setAttribute("data-dismiss","alert")
+    btn_close.setAttribute("arial-label", "close")
+
+    // loop class array
+    const clasListElAlert = ["alert", "alert-warning", "alert-dismissible", "fade", "show","w-25"]
+    clasListElAlert.forEach(itemClass => {
+        el.classList.add( itemClass);
+        el.setAttribute("role","alert")
+    })
+
+    btn_close.appendChild(span_times_close)
+
+    el.appendChild(strElement)
+    el.appendChild(btn_close)
+    container_todo.appendChild(el)
+
+    // membbuat parent pada ui varian
+    const ui_varian = document.createElement('div');
+    ui_varian.classList.add(`col-auto`);
+    ui_varian.setAttribute("id", "new_id_varian");
+
+    // Judul todolist user
+    const ui_label_varian = document.createElement("h6");
+    ui_label_varian.classList.add(`font-weight-bold`)
+    ui_label_varian.textContent = inputValue.value;
+
+    const close_add_inp = document.createElement("span");
+    close_add_inp.classList.add("close_add_inp");
+    close_add_inp.textContent = "x";
+    ui_label_varian.appendChild(close_add_inp);
 
 
-class item{
-    constructor(name){
-        this.createItem(name);
-    }
-    createItem(name){
-        var itemBox = document.createElement('div');
-        itemBox.classList.add(`alert`);
 
-        var input = document.createElement('input');
-        input.type = "text";
-        input.disabled = true;
-        input.value = name;
-        input.classList.add('item_input');
 
-        var edit = document.createElement('button');
-        edit.classList.add(`btn-info`);
-        edit.innerHTML = "EDIT";
-        edit.addEventListener('click', () => this.edit(input, name));
+    // hasil ketika true user mengirim varian yg baru
+    const ui_input_varian = document.createElement("input");
+    ui_input_varian.classList.add(`form-control`);
 
-        var remove = document.createElement('button');
-        remove.classList.add(`btn-danger`);
-        remove.innerHTML = "REMOVE";
-        remove.addEventListener('click', () => this.remove(itemBox, name));
+    ui_varian.appendChild(ui_label_varian);
+    ui_varian.appendChild(ui_input_varian);
+    add_ui_varian.appendChild(ui_varian);
 
-        container.appendChild(itemBox);
 
-        itemBox.appendChild(input);
-        itemBox.appendChild(edit);
-        itemBox.appendChild(remove);
-
-    }
-
-    edit(input, name){
-        if(input.disabled == true){
-           input.disabled = !input.disabled;
-        }
-        else{
-            input.disabled = !input.disabled;
-            let indexof = todos.indexOf(name);
-            todos[indexof] = input.value;
-            window.localStorage.setItem("todos", JSON.stringify(todos));
-        }
-    }
-
-    remove(itemBox, name){
-        itemBox.parentNode.removeChild(itemBox);
-        let index = todos.indexOf(name);
-        todos.splice(index, 1);
-        window.localStorage.setItem("todos", JSON.stringify(todos));
-    }
-}
-
-add.addEventListener('click', check);
-window.addEventListener('keydown', (e) => {
-    if(e.which == 13){
-        check();
-    }
+    // close new  ui input varian
+    document.querySelectorAll(".close_add_inp").forEach(items => {
+            items.addEventListener("click",function (e) {
+                e.target.parentElement.parentElement.style.display = "none";
+            })
+        })
+    // Menginisialisasikan default input menjadi kosong lagi ketika
+    inputValue.value = "";
 })
-
-function check(){
-    if(inputValue.value != ""){
-        new item(inputValue.value);
-        todos.push(inputValue.value);
-        window.localStorage.setItem("todos", JSON.stringify(todos));
-        inputValue.value = "";
-    }
-    console.log("Hello World");
-}
-
-
-for (var v = 0 ; v < todos.length ; v++){
-    new item(todos[v]);
-}
-
-
-new item("Size");
-
-
-
 
 // textarea edit keterangan produk & symbol2
 var quill = new Quill('#editor', {
     theme: 'snow'
   });
 
+
 // +varian
-const btn_add_varian = document.querySelector('.tambah_varian');
+const btn_add_varian = document.querySelector('.btn_add_varian');
 btn_add_varian.addEventListener('click', function () {
-    document.querySelector(".KategoriVariann_product_2").classList.toggle('d-none')
+    document.querySelector(".KategoriVariann_product_2").classList.remove('d-none')
 })

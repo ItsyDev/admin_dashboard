@@ -481,25 +481,24 @@
                                                        </div>
 
                                                        <!-- Berat GRAM PRODUCT  -->
-                                                       <div class=" col-5  mt-5 mb-5 w-50">
-                                                            <div class="row">
-                                                                 <div class="parent_berat col">
-                                                                      <label class="font-weight-bold">Berat</label>
-                                                                      <div class="input-group mb-3">
-                                                                           <input type="text" class="form-control"
-                                                                                aria-label="Recipient's username"
-                                                                                aria-describedby="button-addon2">
-                                                                           <div class="input-group-append">
-                                                                                <button
-                                                                                     class="btn btn-outline-secondary"
-                                                                                     type="button" id="button-addon2"
-                                                                                     disabled>gram</button>
-                                                                           </div>
+                                                       <div class="  mt-5 mb-5 ">
+
+                                                            <div class="parent_berat col">
+                                                                 <label class="font-weight-bold">Berat</label>
+                                                                 <div class="input-group mb-3">
+                                                                      <input type="text" class="form-control"
+                                                                           aria-label="Recipient's username"
+                                                                           aria-describedby="button-addon2">
+                                                                      <div class="input-group-append">
+                                                                           <button class="btn btn-outline-secondary"
+                                                                                type="button" id="button-addon2"
+                                                                                disabled>gram</button>
                                                                       </div>
                                                                  </div>
-
-
                                                             </div>
+
+
+
 
 
 
@@ -534,8 +533,8 @@
 
 
                                                                  <!-- ======================= detail input add product  -->
-                                                                 <div class="p-2 row">
-                                                                      <div class="col-auto">
+                                                                 <div class="p-2 row" id="add_ui_varian">
+                                                                      <div class="col-auto mb-3">
                                                                            <!-- Foto Product  -->
                                                                            <div class="foto_produk font-weight-bold">
                                                                                 <h6 class="font-weight-bold">Foto Produk
@@ -596,10 +595,7 @@
                                                                            </div>
                                                                       </div>
 
-
-
-
-                                                                      <div class="col-auto">
+                                                                      <div class="col-auto mt-4">
                                                                            <!--stok_produk -->
                                                                            <div class="stok_produk">
                                                                                 <h6 class="font-weight-bold">Stok</h6>
@@ -609,13 +605,102 @@
 
                                                                       </div>
                                                                  </div>
+                                                                 <div class="KategoriVariann_product_2 d-none mt-4">
+
+                                                                      <div class="p-2 row" id="add_ui_varian">
+                                                                           <div class="col-auto">
+                                                                                <!-- Foto Product  -->
+                                                                                <div
+                                                                                     class="foto_produk font-weight-bold">
+                                                                                     <h6 class="font-weight-bold">Foto
+                                                                                          Produk
+                                                                                     </h6>
+                                                                                     <input type="file" class="w-100 ">
+                                                                                </div>
+                                                                           </div>
+
+                                                                           <div class="col-auto">
+                                                                                <!-- Spesifikasi produk -->
+                                                                                <div
+                                                                                     class="spesifikasi_produk font-weight-bold">
+                                                                                     <h6 class="font-weight-bold">
+                                                                                          Spesifikasi
+                                                                                     </h6>
+                                                                                     <small
+                                                                                          class="text-muted ml-2">SKU</small>
+                                                                                     <input
+                                                                                          class="form-control w-100 ml-2"
+                                                                                          name="spesifikasi"
+                                                                                          type="text">
+                                                                                </div>
+                                                                           </div>
+
+                                                                           <div class="col-auto">
+                                                                                <!--Harga Produk -->
+                                                                                <div
+                                                                                     class="harga_produk font-weight-bold ">
+                                                                                     <h6 class="font-weight-bold">Harga
+                                                                                     </h6>
+                                                                                     <div class="harga_beli ">
+
+                                                                                          <small
+                                                                                               class="text-muted ml-2">Harga
+                                                                                               Beli</small>
+                                                                                          <input
+                                                                                               class="form-control  ml-2"
+                                                                                               name="harga" id="harga "
+                                                                                               type="number">
+                                                                                     </div>
+
+                                                                                     <!-- harga_jual_normal -->
+                                                                                     <div class="harga_jual_normal">
+                                                                                          <small
+                                                                                               class="text-muted ml-2 ">Harga
+                                                                                               Jual
+                                                                                               Normal</small>
+                                                                                          <input
+                                                                                               class="form-control  ml-2"
+                                                                                               name="harga_jual_normal"
+                                                                                               id="harga_jual_normal "
+                                                                                               type="number">
+                                                                                     </div>
+
+                                                                                     <!-- harga_jual_reseler -->
+                                                                                     <div class="harga_jual_reseler">
+                                                                                          <small
+                                                                                               class="text-muted ml-2">
+                                                                                               Harga Jual
+                                                                                               Reseller</small>
+                                                                                          <input
+                                                                                               class="form-control  ml-2"
+                                                                                               name="harga_jual_reseler"
+                                                                                               id="harga_jual_reseler "
+                                                                                               type="number">
+                                                                                     </div>
+                                                                                </div>
+                                                                           </div>
+
+                                                                           <div class="col-auto">
+                                                                                <!--stok_produk -->
+                                                                                <div class="stok_produk">
+                                                                                     <h6 class="font-weight-bold">Stok
+                                                                                     </h6>
+                                                                                     <input type="number" value="0"
+                                                                                          class="form-control w-100">
+                                                                                </div>
+
+                                                                           </div>
+                                                                      </div>
+
+                                                                 </div>
+
                                                             </section>
 
 
                                                        </div>
                                                        <!-- + varian ui  -->
                                                        <div
-                                                            class="col-12 d-flex justify-content-center align-items-center mt-5">
+                                                            class="col-12 d-flex justify-content-center align-items-center mt-5 btn_add_varian">
                                                             <span type="button"
                                                                  class=" btn-sm btn btn-outline-primary tambah_varian">+
                                                                  varian</span>

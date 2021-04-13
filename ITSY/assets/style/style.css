@@ -10329,24 +10329,6 @@ h6 {
   font-weight: 400;
 }
 
-section.harga_grosir .rentang_inp_pemisah {
-  position: absolute;
-  top: 47px;
-  left: 48%;
-  height: 30px;
-  line-height: 13px;
-}
-section.harga_grosir .rentang_inp_pemisah2 {
-  position: absolute;
-  top: 0;
-  left: 48%;
-  height: 30px;
-  line-height: 13px;
-}
-section.harga_grosir .inpt_rentang {
-  width: 50% !important;
-}
-
 .container_todo_value {
   display: flex;
   justify-content: space-between;
@@ -10361,6 +10343,21 @@ section.harga_grosir .inpt_rentang {
 }
 .container_todo_value .alert .btn-info {
   display: inline-block;
+}
+
+#new_id_varian {
+  margin-top: 30px;
+}
+#new_id_varian .font-weight-bold {
+  position: relative;
+}
+#new_id_varian .font-weight-bold span {
+  position: absolute;
+  left: 98%;
+  top: -4%;
+  font-weight: bolder;
+  color: red;
+  cursor: pointer;
 }
 
 @media (max-width: 992px) {
@@ -10405,6 +10402,10 @@ section.harga_grosir .inpt_rentang {
 }
 
 @media (max-width: 552px) {
+  #add_ui_varian .col-auto {
+    width: 100%;
+  }
+
   .status-saldo, .status-total_order {
     border-bottom: 1px solid lightblue;
     margin-bottom: 10px;

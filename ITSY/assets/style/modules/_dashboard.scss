@@ -13,25 +13,6 @@ h6 {
   font-size: 16px;
   font-weight: 400;
 }
-section.harga_grosir {
-  .rentang_inp_pemisah {
-    position: absolute;
-    top: 47px;
-    left: 48%;
-    height: 30px;
-    line-height: 13px;
-  }
-  .rentang_inp_pemisah2 {
-    position: absolute;
-    top: 0;
-    left: 48%;
-    height: 30px;
-    line-height: 13px;
-  }
-  .inpt_rentang {
-    width: 50% !important;
-  }
-}
 
 // ============================= TODOLIST  VARIAN  ========================
 .container_todo_value {
@@ -47,6 +28,22 @@ section.harga_grosir {
     }
     .btn-info {
       display: inline-block;
+    }
+  }
+}
+// element id di beri pada  file script.js
+#new_id_varian {
+  margin-top: 30px;
+  .font-weight-bold {
+    position: relative;
+
+    span {
+      position: absolute;
+      left: 98%;
+      top: -4%;
+      font-weight: bolder;
+      color: red;
+      cursor: pointer;
     }
   }
 }
@@ -103,6 +100,11 @@ section.harga_grosir {
 }
 
 @media (max-width: 552px) {
+  #add_ui_varian {
+    .col-auto {
+      width: 100%;
+    }
+  }
   .status {
     &-saldo,
     &-total_order {
